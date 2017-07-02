@@ -16,7 +16,7 @@
 			<p:inputText id="bar" value="#{someController.foo.bar}" />
 			<p:message for="bar" />
 			<p:commandButton value="Action" action="#{someController.someAction()}" ajax="false" validateClient="false">
-				<o:validateBean value="#{someController.foo}" />
+				<o:validateBean value="#{someController.foo}" showMessageFor="@violating" />
 			</p:commandButton>
 			
 		</h:form>
